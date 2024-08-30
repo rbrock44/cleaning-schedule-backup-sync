@@ -9,9 +9,28 @@ data class Meeting(
     val person: String = ""
 ) {
     companion object {
-        fun fromLine(line: String): Meeting {
-            val items = line.split("|")
-            return Meeting(items[0].toInt(), items[1], items[2], items[3], items[4], items[5])
+        private fun fromJson(json: String): Meeting {
+            val keyValuePairs = json.trim('{', '}').split(",")
+            val map = keyValuePairs.map {
+                val (key, value) = it.split(":")
+                key.trim('"') to value.trim('"')
+            }.toMap()
+
+            return Meeting(
+                id = map["id"]?.toIntOrNull() ?: 0,
+                date = map["date"].orEmpty(),
+                startTime = map["startTime"].orEmpty(),
+                endTime = map["endTime"].orEmpty(),
+                title = map["title"].orEmpty(),
+                person = map["person"].orEmpty()
+            )
+        }
+
+        fun parseMeetingsJson(json: String): List<Meeting> {
+            val meetingsJson = json.trim('[', ']').split("},{")
+            return meetingsJson.map { jsonPart ->
+                fromJson("{$jsonPart}")
+            }
         }
     }
 
