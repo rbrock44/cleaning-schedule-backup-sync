@@ -6,10 +6,10 @@ const val outputFile = """c\\workspace\\cleaning-schedule-database\\meetings.txt
 const val baseUrl = """https://home-page-api-34607.herokuapp.com/cleaning-schedule"""
 
 fun main() {
-    val lines = saveMeetings()
+    val meetings = saveMeetings()
 
     println("Success!")
-    println("Media files found: " + lines.size)
+    println("Meetings found: " + meetings.size)
 }
 
 fun saveMeetings(): List<Meeting> {
