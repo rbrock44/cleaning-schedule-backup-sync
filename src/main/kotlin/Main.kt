@@ -4,7 +4,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import kotlin.text.Charsets.UTF_8
 
-const val outputFile = """c\\workspace\\cleaning-schedule-database\\meetings.txt"""
+const val outputFile = """c:\workspace\cleaning-schedule-database\meetings.txt"""
 
 const val baseUrl = """https://home-page-api-34607.herokuapp.com/cleaning-schedule"""
 
