@@ -17,7 +17,7 @@
 
 ## 🧠 What's My Purpose?
 
-This is a kotlin command line application was created to backup the [Home Page Api Cleaning Schedule database](https://home-page-api.ryan-brock.com/cleaning-schedule) with [cleaning-schedule-database](https://github.com/rbrock44/cleaning-schedule-database).
+This is a kotlin command line application created to backup the [Home Page Api Cleaning Schedule database](https://home-page-api.ryan-brock.com/cleaning-schedule) with [cleaning-schedule-database](https://github.com/rbrock44/cleaning-schedule-database).
 
 ---
 
