@@ -24,6 +24,7 @@ This is a kotlin command line application created to backup the [Home Page Api C
 ## 🚦 How to Use
 
 There's a [dailyRun.sh](/scripts/dailyRun.sh) file that should be hooked up to a cron job or task scheduler. It's dependend on [cleaning-schedule-database](https://github.com/rbrock44/cleaning-schedule-database) and this repo being in the `c:\workspace` directory and will update the database on the interval set
+
 ---
 
 ## 🛠 Technologies
