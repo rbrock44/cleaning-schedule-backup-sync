@@ -6,7 +6,7 @@ import kotlin.text.Charsets.UTF_8
 
 const val outputFile = """c:\workspace\cleaning-schedule-database\meetings.txt"""
 
-const val baseUrl = """https://home-page-api-34607.herokuapp.com/cleaning-schedule"""
+const val baseUrl = """https://home-page-api.ryan-brock.com/cleaning-schedule"""
 
 fun main() {
     val meetings = saveMeetings()
